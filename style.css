@@ -1,0 +1,131 @@
+/* Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Background image setup */
+.login-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('./thrift-store.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* White login card */
+.glass-container {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 360px;
+  padding: 40px 30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Title and subtitle */
+.login-h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.login-box h4 {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: normal;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+/* Label styling */
+.login-form label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+/* Input fields */
+.login-input {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* Options section */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.options input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  color: #444;
+}
+
+.options a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+/* Sign In Button */
+.login-button {
+  background: #007bff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.login-button:hover {
+  background: #0056b3;
+}
+
+/* Bottom text */
+.login-p {
+  font-size: 13px;
+  margin-top: 20px;
+  color: #444;
+}
+
+#register {
+  color: #007bff;
+  font-weight: 500;
+  text-decoration: none;
+}
