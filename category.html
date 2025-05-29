@@ -7,9 +7,33 @@
         <link rel="stylesheet" href="category.css">
     </head>
     <body>
-        <nav>
-            
-        </nav>
+        <div class="navbar">
+            <div class="nav-side">
+                <img src="images/icons/thrift-shop-icon.png" alt="Thrift Shop Icon" class="shop-icon" id="shop-icon">
+              <p class="nav-title"><b>Virtual AR Thrift Buddy</b></p>
+            </div>
+    
+            <button class="hamburger" id="hamburger">&#9776;</button>
+          
+            <div class="nav-center">
+              <div class="nav-links">
+                <a class="active" href="#home">Home</a>
+                <a href="#recycle">Learn Recycling</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contactus">Contact Us</a>
+              </div>
+            </div>
+          
+            <div class="nav-side-right">
+              <p class="nav-user" id="user-greeting"><b>Welcome!</b></p>
+              <div class="user-menu-wrapper">
+                <i class="fa-solid fa-user user-icon" id="user-icon"></i>
+                <div class="user-popup" id="user-popup">
+                  <button id="sign-out-button">Sign Out</button>
+                </div>
+              </div>
+            </div>
+        </div>
 
         <main>
             <h1> Shop By Category </h1>
@@ -30,5 +54,6 @@
             </div>
         </main>
 
+        <script src="javascript.js"></script>
     </body>
 </html>
