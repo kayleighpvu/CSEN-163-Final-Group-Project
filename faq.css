@@ -1,0 +1,85 @@
+  /* Reset + BG */
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #E9E8E0;
+  }
+
+  /* Container */
+  .faq-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* Section titles */
+  .faq-section + .faq-section {
+    margin-top: 2.5rem;
+  }
+  
+  .faq-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2c5f2d;
+    text-align: center;
+  }
+  
+  /* Each FAQ item */
+  .faq-item {
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* The question (summary) */
+  .faq-item summary {
+    list-style: none;         /* remove default marker */
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #49454F;
+    position: relative;
+    padding-right: 1.5rem;
+  }
+  
+  /* Custom arrow */
+  .faq-item summary::after {
+    content: "▾";
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Rotate arrow when open */
+  .faq-item[open] > summary::after {
+    transform: rotate(180deg);
+  }
+  
+  /* The answer text */
+  .faq-item p {
+    margin: 0.5rem 0 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4A4459;
+  }
+  
+  .faq-footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #49454F; /* matches your question text color */
+  }
+  
+  .faq-footer a {
+    color: #007bff; /* or whatever primary link color you use */
+    text-decoration: underline;
+  }
+  
+  .faq-footer a:hover {
+    opacity: 0.8;
+  }
+  

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Top Collection – Virtual AR Thrift Buddy</title>
+  <link rel="stylesheet" href="tops-collection.css" />
+  <style>
+    .saved-list {
+      background-color: #fff;
+      border: 1px solid #bbb;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      border-radius: 10px;
+    }
+
+    .saved-item {
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+  </style>
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body style="background-color: #f1f0e8; font-family: Arial, sans-serif;">
+<!-- Navbar -->
+<div class="navbar">
+  <div class="nav-side">
+    <img src="images/thrift-shop-icon.png" alt="Thrift Shop Icon" class="shop-icon" id="shop-icon">
+    <p class="nav-title"><b>Virtual AR Thrift Buddy</b></p>
+  </div>
+
+  <button class="hamburger" id="hamburger">&#9776;</button>
+
+  <div class="nav-center">
+    <div class="nav-links" id="nav-links">
+      <a class="active" href="thrift-store.html">Home</a>
+      <a href="recycle.html">Learn Recycling</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+
+  <div class="nav-side-right">
+    <p class="nav-user" id="user-greeting"><b>Welcome!</b></p>
+    <div class="user-menu-wrapper">
+      <img src="images/user-icon.png" alt="User Icon" class="user-icon" id="user-icon">
+      <div class="user-popup" id="user-popup">
+        <button id="sign-out-button">Sign Out</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<body style="font-family: Arial, sans-serif; background-color: #E9E8E0;">
+  <main class="thrift-container">
+    <h1 class="top-h1">Tops Collection</h1>
+    <div class="location-bar">
+      <input type="text" class="location-search" placeholder="Filter by keyword..." />
+      <button class="starred-btn" onclick="showSaved()">Saved Tops</button>
+    </div>
+
+    <div class="store-grid" id="topsGrid"></div>
+
+    <div class="saved-list" id="savedList" style="display: none;">
+      <h3>Saved Tops:</h3>
+      <div id="savedItems"></div>
+    </div>
+  </main>
+
+  <script src="javascript-t.js"></script>
+</body>
+</html>
+

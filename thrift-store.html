@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thrift Stores – Virtual AR Thrift Buddy</title>
+
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="thrift-store.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-side">
+      <img src="images/thrift-shop-icon.png" alt="Thrift Shop Icon" class="shop-icon" id="shop-icon">
+      <p class="nav-title"><b>Virtual AR Thrift Buddy</b></p>
+    </div>
+
+    <button class="hamburger" id="hamburger">&#9776;</button>
+
+    <div class="nav-center">
+      <div class="nav-links" id="nav-links">
+        <a class="active" href="thrift-store.html">Home</a>
+        <a href="recycle.html">Learn Recycling</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="nav-side-right">
+      <p class="nav-user" id="user-greeting"><b>Welcome!</b></p>
+      <div class="user-menu-wrapper">
+        <img src="images/user-icon.png" alt="User Icon" class="user-icon" id="user-icon">
+        <div class="user-popup" id="user-popup">
+          <button id="sign-out-button">Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <main class="contact-container">
+    <h1>Find your store!</h1>
+  </main>
+  
+  <main class="thrift-container">
+    <div class="location-bar">
+      <h2>San Jose</h2>
+      <input type="text" class="location-search" placeholder="City, State (e.g., Santa Clara, CA)">
+      <button class="starred-btn">Starred Stores</button>
+    </div>
+
+    <div class="store-grid">
+      <!-- Sample store cards -->
+      <!-- Repeat or generate dynamically as needed -->
+      <div class="store-card">
+        <img src="images/not-filled-star.png" class="star-icon toggle-star" alt="Star Icon" />
+        <a href="category.html" class="store-link">
+            <img src="images/h-Nuevo-thirft.png" class="store-img" alt="Thrift Store">
+            <p class="store-name">Hope Nuevo Thrift Store</p>
+        </a>
+      </div>
+
+       <div class="store-card">
+        <img src="images/not-filled-star.png" class="star-icon toggle-star" alt="Star Icon" />
+        <a href="category.html" class="store-link">
+            <img src="images/HopeTHRIFT.png" class="store-img" alt="Thrift Store">
+            <p class="store-name">HopeTHRIFT</p>
+        </a>
+      </div>
+
+       <div class="store-card">
+        <img src="images/not-filled-star.png" class="star-icon toggle-star" alt="Star Icon" />
+        <a href="category.html" class="store-link">
+            <img src="images/Salvation-Army.png" class="store-img" alt="Thrift Store">
+            <p class="store-name">Salvation Army Thrift Store</p>
+        </a>
+      </div>
+
+       <div class="store-card">
+        <img src="images/not-filled-star.png" class="star-icon toggle-star" alt="Star Icon" />
+        <a href="category.html" class="store-link">
+            <img src="images/thrift-box.png" class="store-img" alt="Thrift Store">
+            <p class="store-name">Thrift Box Thrift Store</p>
+        </a>
+      </div>
+
+      <!-- Add more cards as needed -->
+    </div>
+  </main>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

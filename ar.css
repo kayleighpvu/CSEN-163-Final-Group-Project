@@ -1,0 +1,49 @@
+body {
+  background-color: #e9e8e0;
+  font-family: Arial, sans-serif;
+}
+
+.ar-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.ar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.ar-title {
+  font-size: 1.2rem;
+  text-decoration: underline;
+  color: black;
+}
+
+.save-look-btn {
+  background-color: #ddd;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.ar-instruction {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.ar-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.ar-image {
+  max-width: 90%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}

@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  
-    //global vars
     const form = document.querySelector('.login-form');
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.querySelector('.nav-links');
@@ -14,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const emailError = document.getElementById('email-error');
     const messageError = document.getElementById('message-error');
   
-    // login form
     if (form) {
       const usernameInput = document.getElementById('username');
       const passwordInput = document.getElementById('password');
@@ -49,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!hasError) {
           const username = usernameInput.value.trim();
           localStorage.setItem('loggedInUser', username);
-          window.location.href = 'ideapage.html';
+          window.location.href = 'thrift-store.html';
         }
       });
     }
@@ -79,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (signOutButton) {
       signOutButton.addEventListener('click', () => {
         localStorage.removeItem('loggedInUser');
-        window.location.href = 'loginpage.html';
+        window.location.href = 'login.html';
       });
     }
   
@@ -135,4 +132,29 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   });
-  
+
+document.addEventListener("DOMContentLoaded", () => {
+  const stars = document.querySelectorAll(".toggle-star");
+
+  stars.forEach(star => {
+    star.addEventListener("click", () => {
+      const filled = "images/filled-star.jpeg";
+      const notFilled = "images/not-filled-star.png";
+
+      star.src = star.src.includes("not-filled-star.png") ? filled : notFilled;
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("genderPopup");
+  const genderOptions = document.querySelectorAll(".gender-option");
+
+  genderOptions.forEach(option => {
+    option.addEventListener("click", () => {
+      popup.style.display = "none";
+      // Optional: store the gender selection if needed
+      // localStorage.setItem("gender", option.dataset.gender);
+    });
+  });
+});

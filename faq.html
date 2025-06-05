@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FAQ – Virtual AR Thrift Buddy</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-side">
+        <img src="images/thrift-shop-icon.png" alt="Thrift Shop Icon" class="shop-icon" id="shop-icon">
+      <p class="nav-title"><b>Virtual AR Thrift Buddy</b></p>
+    </div>
+
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  
+    <div class="nav-center">
+      <div class="nav-links">
+        <a href="thrift-store.html">Home</a>
+        <a href="recycle.html">Learn Recycling</a>
+        <a class="active" href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  
+    <div class="nav-side-right">
+      <p class="nav-user" id="user-greeting"><b>Welcome!</b></p>
+      <div class="user-menu-wrapper">
+        <img src="images/user-icon.png" alt="User Icon" class="user-icon" id="user-icon">
+        <div class="user-popup" id="user-popup">
+          <button id="sign-out-button">Sign Out</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <!-- <div class="contact-container">
+    <h1>Frequently Asked Questions</h1>
+  </div> -->
+  <main class="faq-container">
+    <h1>Frequently Asked Questions</h1>
+
+    <section class="faq-section">
+      <h2>Account</h2>
+
+      <details class="faq-item">
+        <summary>How can I sign in or sign up?</summary>
+        <p>
+          You can head to our 
+          <a href="login.html">login page</a> to both log into your account or to create a new one!
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>I forgot my password. How can I reset it?</summary>
+        <p>
+          No problem! On the login page, click “Forgot Password?” and enter the email you used to sign up. We’ll send a reset link right away. Click that link, choose a new password, and you’re back in. If you don’t see the email within a few minutes, check your spam or promotions folder.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I update my email address or username later?</summary>
+        <p>
+          Absolutely. After logging in, head to your Account Settings (click your user icon in the top bar, then “Profile”). From there, you can change your username, email address, password, and preferences. Just make sure to click “Save Changes” before you navigate away.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I delete my account?</summary>
+        <p>
+          We’d hate to see you go, but you can delete your account at any time. Go to Account Settings, scroll to the bottom, and click “Delete Account.” You’ll be asked to confirm your password. Once confirmed, your data is permanently removed from our servers—no sign-in possible after that. If you change your mind, you’ll need to sign up again as a new user.
+        </p>
+      </details>
+      <!-- repeat for each Account question -->
+    </section>
+
+    <section class="faq-section">
+      <h2>Shopping</h2>
+
+      <details class="faq-item">
+        <summary>How do I browse and find items I want?</summary>
+        <p>
+          You can explore our inventory by heading to our
+          <a href="category.html">shop home</a> to start by selecting categories like Tops, Bottoms, Shoes, or Others. Each category displays a grid of items with thumbnail images. Click on any item to see detailed photos, descriptions, and AR previews (if available). You can also use the search bar at the top of the page—just type in a keyword, brand name, or style descriptor to quickly narrow down results. Filters for size, color, and price range appear on category pages to help you refine your search even further.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How can I find stores near me?</summary>
+        <p>
+          You can search for and select nearby stores by heading to our selected store page. There, you will find a list of all nearby participating thrift stores and from there can search their store inventory!
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I purchase an item?</summary>
+        <p>
+          We do not offer online item purchasing for any thrift stores, however you can save items which you like to purchase them in person later!
+        </p>
+      </details>
+
+      <!-- repeat for each AR Features question -->
+    </section>
+
+    <section class="faq-section">
+      <h2>AR Features</h2>
+
+      <details class="faq-item">
+        <summary>Why is my AR view not loading?</summary>
+        <p>A few common reasons:</p>
+    <ul>
+      <li><strong>Loose internet connection:</strong> AR assets need to download quickly. Try switching to Wi-Fi or a stronger cellular signal.</li>
+      <li><strong>Camera permissions:</strong> Make sure you’ve granted the browser/app permission to use your camera. Head to your device’s Settings → Privacy → Camera and enable access for our site.</li>
+      <li><strong>Unsupported device/browser:</strong> If your phone isn’t ARCore/ARKit-compatible, the page will fall back to a static image preview.</li>
+    </ul>
+    <p>If none of these solve it, send us a message on the <a href="contact.html">Contact page</a>—include your device model and OS version, and we’ll troubleshoot.</p>
+      </details>
+
+    </section>
+  </main>
+
+    <p class="faq-footer">
+      Didn’t find what you’re looking for? 
+      <a href="contact.html">Contact Us</a> for further assistance.
+    </p>
+    <br>
+  
+  <script src="javascript.js"></script>
+</body>
+</html>

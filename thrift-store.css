@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #E9E8E0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c5f2d;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.thrift-container {
+  max-width: 80rem;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.location-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.location-bar h2 {
+  flex-shrink: 0;
+}
+
+.location-search {
+  flex-grow: 1;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+.starred-btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #ddd;
+  border: 2px solid #bbb;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.starred-btn:hover {
+  background-color: #c7c7c7;
+}
+
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.store-card {
+  width: 160px;
+  height: 220px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.store-card:hover {
+  transform: translateY(-6px);
+}
+
+.star-icon {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.store-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.store-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Container & headings */
+.contact-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2c5f2d;
+}
+
+.contact-subhead {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #49454F;
+  margin-bottom: 2rem;
+}
+
+.tops-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c5f2d;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}

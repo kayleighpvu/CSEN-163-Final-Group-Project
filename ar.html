@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AR Try-On – Virtual AR Thrift Buddy</title>
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="ar.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-side">
+      <img src="images/thrift-shop-icon.png" alt="Thrift Shop Icon" class="shop-icon" id="shop-icon" />
+      <p class="nav-title"><b>Virtual AR Thrift Buddy</b></p>
+    </div>
+
+    <button class="hamburger" id="hamburger">&#9776;</button>
+
+    <div class="nav-center">
+      <div class="nav-links">
+        <a href="thrift-store.html">Home</a>
+        <a href="recycle.html">Learn Recycling</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="nav-side-right">
+      <p class="nav-user" id="user-greeting"><b>Welcome!</b></p>
+      <div class="user-menu-wrapper">
+        <img src="images/user-icon.png" alt="User Icon" class="user-icon" id="user-icon" />
+        <div class="user-popup" id="user-popup">
+          <button id="sign-out-button">Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AR Try-On Content -->
+  <main class="ar-container">
+    <div class="ar-header">
+      <a href="#" class="ar-title"><b>Try-on the clothes with Augmented Reality!</b></a>
+      <button class="save-look-btn">Save Look</button>
+    </div>
+
+    <p class="ar-instruction">Position your camera over yourself to see.</p>
+
+    <div class="ar-image-wrapper">
+      <img src="images/ar-preview.webp" alt="AR Try-On View" class="ar-image" />
+    </div>
+  </main>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

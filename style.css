@@ -123,7 +123,7 @@ input::placeholder {
 
 .login-input.error {
   border: 2px solid red;
-  background-image: url("images/icons/error-icon.png");
+  background-image: url("images/error-icon.png");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 20px 20px;

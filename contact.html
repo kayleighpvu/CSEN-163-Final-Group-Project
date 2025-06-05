@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Us – Virtual AR Thrift Buddy</title>
+
+  
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-side">
+      <img src="images/thrift-shop-icon.png" alt="Thrift Shop Icon" class="shop-icon" id="shop-icon">
+      <p class="nav-title"><b>Virtual AR Thrift Buddy</b></p>
+    </div>
+
+    <button class="hamburger" id="hamburger">&#9776;</button>
+
+    <div class="nav-center">
+      <div class="nav-links" id="nav-links">
+        <a href="thrift-store.html">Home</a>
+        <a href="recycle.html">Learn Recycling</a>
+        <a href="faq.html">FAQ</a>
+        <a class="active" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="nav-side-right">
+      <p class="nav-user" id="user-greeting"><b>Welcome!</b></p>
+      <div class="user-menu-wrapper">
+        <img src="images/user-icon.png" alt="User Icon" class="user-icon" id="user-icon">
+        <div class="user-popup" id="user-popup">
+          <button id="sign-out-button">Sign Out</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="contact-container">
+    <h1>Contact Us</h1>
+    <p class="contact-subhead">Need further help? Send us a message</p>
+
+    <div class="contact-card">
+      <form action="#" method="POST" class="contact-form">
+        <!-- Topic selector -->
+        <div class="form-group">
+          <label for="topic">What do you need help with?</label>
+          <select id="topic" name="topic" required>
+            <option value="" disabled selected>Please select one…</option>
+            <option value="account">Account</option>
+            <option value="ar-features">AR Features</option>
+            <option value="orders">Orders</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- Question / comment -->
+        <div class="form-group">
+          <label for="question">What is your question/comment/issue?</label>
+          <input type="text" id="question" name="question" placeholder="Enter your message…" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">What is your email address?</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address…" required>
+        </div>
+
+        <!-- Message body -->
+        <div class="form-group">
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Enter your message…" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

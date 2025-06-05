@@ -10,7 +10,7 @@
     <body>
         <div class="navbar">
             <div class="nav-side">
-                <img src="images/icons/thrift-shop-icon.png" alt="Thrift Shop Icon" class="shop-icon" id="shop-icon">
+                <img src="images/thrift-shop-icon.png" alt="Thrift Shop Icon" class="shop-icon" id="shop-icon">
               <p class="nav-title"><b>Virtual AR Thrift Buddy</b></p>
             </div>
     
@@ -18,28 +18,44 @@
           
             <div class="nav-center">
               <div class="nav-links">
-                <a class="active" href="#home">Home</a>
-                <a href="#recycle">Learn Recycling</a>
-                <a href="#faq">FAQ</a>
-                <a href="#contactus">Contact Us</a>
+                <a href="thrift-store.html">Home</a>
+                <a href="recycle.html">Learn Recycling</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact Us</a>
               </div>
             </div>
           
             <div class="nav-side-right">
               <p class="nav-user" id="user-greeting"><b>Welcome!</b></p>
               <div class="user-menu-wrapper">
-                <i class="fa-solid fa-user user-icon" id="user-icon"></i>
+                <img src="images/user-icon.png" alt="User Icon" class="user-icon" id="user-icon">
                 <div class="user-popup" id="user-popup">
                   <button id="sign-out-button">Sign Out</button>
                 </div>
               </div>
             </div>
         </div>
+        <!-- Gender Selection Popup -->
+        <div class="gender-popup" id="genderPopup">
+          <div class="gender-popup-content">
+            <div class ="gender-options-row">
+              <div class="gender-option" data-gender="mens">
+                <img src="images/men.jpeg" alt="Mens" />
+                <button>Mens</button>
+              </div>
+              <div class="gender-option" data-gender="womens">
+                <img src="images/women.png" alt="Womens" />
+                <button>Womens</button>
+              </div>
+            </div>
+            <p class="gender-question">What gender are you shopping for?</p>
+          </div>
+        </div>
 
         <main>
             <h1> Shop By Category </h1>
             <div id="categories">
-                <a href="whatever.html" class="box tops"><h3> Tops </h3></a>
+                <a href="tops-collection.html" class="box tops"><h3> Tops </h3></a>
                     
                 <div class="box bottoms">
                     <h3> Bottoms </h3>
